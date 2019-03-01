@@ -1,0 +1,74 @@
+<header>
+    <nav class="mb-1 navbar navbar-expand-lg navbar-dark default-color">
+        <a class="navbar-brand navbar-header">
+            <img src="assets/img/logo.jpg" alt="logo" style="width:80px;">
+        </a>
+        <button (click)="coll=!coll" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-555"
+            aria-controls="navbarSupportedContent-555" aria-expanded="false" aria-label="Toggle navigation" (click)="!show=show">
+            <i class="fa" [ngClass]="{'fa-bars': coll, 'fa-times': !coll}"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-555">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-link nav-item">
+                    <b><a class="router-link" routerLink="/forSale" [routerLinkActive]="['active-link']">Te koop
+                            </a></b>
+                    <div class="overlay"></div>
+                </li>
+                <li class="nav-link nav-item">
+                    <b><a class="router-link" routerLink="/forRent" routerLinkActive='active-link'>Te huur
+                            </a></b>
+                    <div class="overlay"></div>
+                </li>
+                <li class="nav-link nav-item">
+                    <b><a class="router-link" routerLinkActive='active-link'>Nieuwbouw</a></b>
+                    <div class="overlay"></div>
+                </li>
+                <li class="nav-link nav-item">
+                    <b><a class="router-link" routerLinkActive='active-link'>Ik ben zoek</a></b>
+                    <div class="overlay"></div>
+                </li>
+                <li class="nav-link nav-item">
+                    <b><a href="#footer-contacts" class="router-link" routerLinkActive='active-link'>Concat</a></b>
+                    <div class="overlay"></div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<router-outlet></router-outlet>
+
+<footer id="footer-contacts">
+    <nav class="navbar ">
+        <a class="navbar-brand navbar-header">
+            <img src="assets/img/logo.jpg" alt="logo" style="width:80px;">
+        </a>
+        <ul class="footer-contact-container">
+            <li class="">
+                <h6 class="p-green"><b>SOCIAL</b></h6>
+                <ul class="contacts-ul">
+                    <li class="contacts-li">
+                        <i class="fa fa-map-marker"></i>
+                        <a class="link-address">Leopoldstraat 37, 2800 Mechelen</a>
+                    </li>
+                    <li class="contacts-li">
+                        <i class="fa fa-envelope"></i>
+                        <a class="link-address">info@copandi.be</a>
+                    </li>
+                    <li class="contacts-li">
+                        <i class="fa fa-phone"></i>
+                        <a class="link-address">015794644</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="social-networks-icon-warper">
+                <h6 class="p-green"><b>SOCIAL</b></h6>
+                <div>
+                    <a class="link-address"><i class="fa fa-facebook"></i></a>
+                    <a class="link-address"> <i class="fa fa-instagram"></i></a>
+                </div>
+            </li>
+        </ul> 
+    </nav>
+</footer>
+<div class="footer-bootom-text">2018Copyright-alle rechten voorbehouden Copandi</div>

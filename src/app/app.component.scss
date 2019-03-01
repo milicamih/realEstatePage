@@ -1,0 +1,114 @@
+header{
+    background-color: #252b33;
+    padding: 3px 70px 3px 80px;
+    text-align: center;
+
+    .navbar-brand{
+        margin-right: 20px;
+    }
+    .router-link {
+        color:white;
+        font-weight: 300;
+        margin-right: 0 10px;
+        padding: 5px;
+       
+    }
+
+.active-link{
+    color: #82be55 !important;
+}
+.nav-item{
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(190, 206, 211, 0.349);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+  }
+  
+  .nav-item:hover .overlay {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+footer{
+    background-color: #252b33;
+    padding: 3px 70px 3px 100px;
+   
+    .footer-contact-container{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .p-green{
+        color:#82be55;
+        margin-bottom: 17px;
+    }
+    .contacts-ul{
+        padding: 0px;
+
+       .fa{
+            color:#82be55;   
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        .link-address{
+            color:grey;
+        }
+
+        .contacts-li{
+            margin-bottom: 5px;
+        }
+
+        :hover{
+            color:#82be55;  
+            cursor: pointer;
+        }
+      
+    }
+    .social-networks-icon-warper{
+        margin: 0 30px;
+        text-align: center;
+
+        .fa{
+            font-size: 30px;
+            color:grey;
+            margin: 0 7px;
+        }    
+        .fa:hover{
+            color: #82be55!important;
+            cursor: pointer;
+        }
+        
+    }
+}
+.footer-bootom-text{
+    background-color: rgb(31, 29, 29);
+    text-align: center;
+    color:grey;
+    padding: 7px;
+}
+
+@media only screen and (max-width:375px){
+    header, footer{
+        padding:3px 15px;
+    }
+    .social-networks-icon-warper{
+       padding-top: 20px !important;
+    }
+    
+  }
